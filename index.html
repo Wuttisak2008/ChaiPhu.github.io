@@ -1,97 +1,13 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio | ChaiPhu Channel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#f5f7fa;
-    color:#333;
-}
-
-header{
-    background:linear-gradient(135deg,#0066ff,#00c6ff);
-    color:white;
-    text-align:center;
-    padding:60px 20px;
-}
-
-header h1{
-    font-size:42px;
-}
-
-header p{
-    margin-top:10px;
-    font-size:18px;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-.section-title{
-    text-align:center;
-    margin:50px 0 25px;
-    font-size:32px;
-}
-
-.portfolio{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-    margin-bottom:50px;
-}
-
-.card{
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:20px;
-}
-
-.card-content h3{
-    margin-bottom:10px;
-}
-
-.card-content p{
-    color:#666;
-}
-
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -101,49 +17,46 @@ footer{
 
 <div class="container">
 
-<h2 class="section-title">ผลงานของฉัน</h2>
+    <h2 class="section-title">ผลงานของฉัน</h2>
 
-<div class="portfolio">
+    <div class="portfolio">
 
-<div class="card">
-<img src="https://picsum.photos/600/400?1">
-<div class="card-content">
-<h3>ผลงานที่ 1</h3>
-<p>รายละเอียดของผลงาน สามารถแก้ไขข้อความนี้ได้</p>
-</div>
-</div>
+        <div class="card">
+            <img src="https://picsum.photos/400/250?1">
+            <div class="card-content">
+                <h3>ผลงานที่ 1</h3>
+                <p>เว็บไซต์ Portfolio</p>
+                <button class="detail-btn">ดูรายละเอียด</button>
+            </div>
+        </div>
 
-<div class="card">
-<img src="https://picsum.photos/600/400?2">
-<div class="card-content">
-<h3>ผลงานที่ 2</h3>
-<p>รายละเอียดของผลงาน สามารถเพิ่มรูปภาพจริงของคุณได้</p>
-</div>
-</div>
+        <div class="card">
+            <img src="https://picsum.photos/400/250?2">
+            <div class="card-content">
+                <h3>ผลงานที่ 2</h3>
+                <p>โปรเจกต์ที่สร้างขึ้น</p>
+                <button class="detail-btn">ดูรายละเอียด</button>
+            </div>
+        </div>
 
-<div class="card">
-<img src="https://picsum.photos/600/400?3">
-<div class="card-content">
-<h3>ผลงานที่ 3</h3>
-<p>เว็บไซต์ โปรแกรม แอป หรือกิจกรรมต่าง ๆ</p>
-</div>
-</div>
+        <div class="card">
+            <img src="https://picsum.photos/400/250?3">
+            <div class="card-content">
+                <h3>ผลงานที่ 3</h3>
+                <p>กิจกรรมและรางวัล</p>
+                <button class="detail-btn">ดูรายละเอียด</button>
+            </div>
+        </div>
 
-<div class="card">
-<img src="https://picsum.photos/600/400?4">
-<div class="card-content">
-<h3>ผลงานที่ 4</h3>
-<p>สามารถเพิ่มได้ไม่จำกัด</p>
-</div>
-</div>
-
-</div>
+    </div>
 
 </div>
 
 <footer>
-© 2026 ChaiPhu Channel | Portfolio Website
+    © 2026 ChaiPhu Channel
 </footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
