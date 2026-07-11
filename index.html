@@ -1,40 +1,32 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gaming Portfolio</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+<div class="card">
+    <h2>💻 Website</h2>
+    <p>เว็บไซต์ Portfolio</p>
+    <button onclick="showProject('เว็บไซต์ Portfolio สำหรับแสดงผลงานที่พัฒนาด้วย HTML, CSS และ JavaScript')">
+        ดูผลงาน
+    </button>
+</div>
 
-<header>
-    <h1>🎮 ChaiPhu Channel</h1>
-    <p>Gaming Portfolio</p>
-</header>
+<div class="card">
+    <h2>🎨 Design</h2>
+    <p>โลโก้และแบนเนอร์</p>
+    <button onclick="showProject('ออกแบบโลโก้ แบนเนอร์ และกราฟิกสำหรับเกม')">
+        ดูผลงาน
+    </button>
+</div>
 
-<section class="portfolio">
-    <div class="card">
-        <h2>💻 Website</h2>
-        <p>เว็บไซต์ Portfolio</p>
+<div class="card">
+    <h2>🎮 FiveM</h2>
+    <p>พัฒนาเซิร์ฟเวอร์</p>
+    <button onclick="showProject('พัฒนาสคริปต์และระบบสำหรับเซิร์ฟเวอร์ FiveM')">
+        ดูผลงาน
+    </button>
+</div>
+
+<!-- กล่องแสดงรายละเอียด -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>รายละเอียดผลงาน</h2>
+        <p id="detail"></p>
     </div>
-
-    <div class="card">
-        <h2>🎨 Design</h2>
-        <p>โลโก้และแบนเนอร์</p>
-    </div>
-
-    <div class="card">
-        <h2>🎮 FiveM</h2>
-        <p>พัฒนาเซิร์ฟเวอร์</p>
-    </div>
-</section>
-
-<footer>
-    © 2026 ChaiPhu Channel
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+</div>
