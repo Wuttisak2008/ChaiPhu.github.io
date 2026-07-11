@@ -1,15 +1,38 @@
-document.addEventListener("DOMContentLoaded", () => {
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0d1117;
+    color:white;
+    text-align:center;
+}
 
-    const buttons = document.querySelectorAll(".detail-btn");
+header{
+    padding:40px;
+    background:#111827;
+}
 
-    buttons.forEach((button, index) => {
+.portfolio{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:40px;
+}
 
-        button.addEventListener("click", () => {
+.card{
+    width:220px;
+    background:#1f2937;
+    padding:20px;
+    border-radius:15px;
+    transition:.3s;
+    box-shadow:0 0 15px #00e5ff;
+}
 
-            alert("คุณกำลังดูรายละเอียดผลงานที่ " + (index + 1));
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px cyan;
+}
 
-        });
-
-    });
-
-});
+footer{
+    padding:20px;
+}
