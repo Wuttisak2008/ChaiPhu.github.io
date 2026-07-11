@@ -1,8 +1,10 @@
-function showProject(text){
-    document.getElementById("detail").innerHTML = text;
-    document.getElementById("popup").style.display = "block";
-}
+const cards=document.querySelectorAll(".card");
 
-function closePopup(){
-    document.getElementById("popup").style.display = "none";
-}
+cards.forEach(card=>{
+card.addEventListener("click",()=>{
+card.style.boxShadow="0 0 50px #ff00ff";
+setTimeout(()=>{
+card.style.boxShadow="0 0 20px cyan";
+},400);
+});
+});
