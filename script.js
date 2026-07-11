@@ -1,7 +1,5 @@
-const buttons = document.querySelectorAll(".detail-btn");
-
-buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-        alert("รายละเอียดผลงานนี้จะแสดงที่นี่");
-    });
+document.querySelectorAll(".card").forEach(card=>{
+    card.onclick=()=>{
+        alert("เปิดดูผลงาน");
+    }
 });
