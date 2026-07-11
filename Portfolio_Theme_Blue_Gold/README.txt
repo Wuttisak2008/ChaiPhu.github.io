@@ -1,0 +1,1 @@
+สร้างโฟลเดอร์ images แล้วใส่ profile.jpg และ page1.jpg ถึง page11.jpg
