@@ -1,1 +1,0 @@
-function openImg(s){viewer.style.display='flex';big.src=s;}function closeImg(){viewer.style.display='none';}
